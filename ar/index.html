@@ -2,8 +2,7 @@
 <html>
 	<head>
 		<script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
-		<!--
-					-->
+		<!---->
 			<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
 
 		
@@ -16,23 +15,22 @@
 			<a-entity cursor="rayOrigin: mouse"></a-entity>
 
 			<!--			-->
-			<a-entity camera>
-				
-			</a-entity>
+			<a-entity camera></a-entity>
 
 			<!-- -->
 				<a-marker type="pattern" url="pattern-index_qr.patt">
 					<a-sphere position="0 0 0" radius="0.1" color="black"></a-sphere>
 					<a-sphere position="0 0 1" radius="0.2" color="red"></a-sphere>
 					<a-sphere position="0 0 2" radius="0.3" color="blue"></a-sphere>
-					<a-image width="5" height="5" position="0.2 0.4 0.4" rotation="-90 0 0" src="images/akane.jpg">
+					<a-image width="1" height="1" position="0 0 0" rotation="0 0 0" src="images/akane.jpg">
 					</a-image>
-				<a-entity position="0 0 0" scale="0.005 0.005 0.005">
-					<a-image width="210" height="297" position="0 0 0" rotation="-90 0 0" src="images/seichi.png"  onclick="console.log('seichi')">
-					</a-image>
-					<a-image width="210" height="297" position="300 0 -0" rotation="-90 0 0" src="images/maincommu.png"  onclick="console.log('maincommu')">
-					</a-image>
-				</a-entity>
+
+					<a-entity position="0 0 0" scale="0.005 0.005 0.005">
+						<a-image width="210" height="297" position="0 0 0" rotation="-90 0 0" src="images/seichi.png"  onclick="console.log('seichi')">
+						</a-image>
+						<a-image width="210" height="297" position="300 0 -0" rotation="-90 0 0" src="images/maincommu.png"  onclick="console.log('maincommu')">
+						</a-image>
+					</a-entity>
 
 				<!-- <a-sky color="#ECECEC"></a-sky> -->
 			<!-- -->
