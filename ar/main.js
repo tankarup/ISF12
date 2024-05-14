@@ -1,14 +1,13 @@
-window.addEventListener("load",function() {
-	on_load();
+
+AFRAME.registerComponent('url_open', {
+	schema: {
+		url: {default: ''}
+	},
+	init: function(){
+		this.el.addEventListener('click', () => {
+			window.open(this.data.url, '_blank');
+			console.log(this);
+		});
+	},
 });
 
-function on_load(){
-	alert('onload');
-	document.getElementById('seichi').addEventListener('click', open('pdf/seichi.pdf'));
-	document.getElementById('maincommu').addEventListener('click', open('pdf/maincommu.pdf'));
-}
-
-function open(url){
-	window.open(url, '_blank');
-	alert(url);
-}
