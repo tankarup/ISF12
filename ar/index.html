@@ -2,9 +2,9 @@
 <html>
 	<head>
 		<script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
-		<!---->
+		<!--
 			<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-
+ 		-->
 		
 	</head>
 	<body style="margin: 0; overflow: hidden">
@@ -16,13 +16,15 @@
 			<!--
 			<a-cursor></a-cursor>
 			-->
-			<a-entity cursor="rayOrigin: mouse; fuse: false" raycaster="objects: .raycastable"></a-entity>
 
-			<!--			-->
-			<a-entity camera></a-entity>
+			<!--	<a-entity cursor="rayOrigin: mouse; fuse: false" raycaster="objects: .raycastable"></a-entity>		-->
+			
 
-			<!-- -->
-				<a-marker type="pattern" url="pattern-index_qr.patt">
+			<!--	<a-entity camera position="0 1500 -650"></a-entity>		-->
+			
+
+			<!-- <a-marker type="pattern" url="pattern-index_qr.patt"> -->
+				
 					<!--
 					<a-sphere position="0 0 0" radius="0.1" color="black"></a-sphere>
 					<a-sphere position="0 0 1" radius="0.2" color="red"></a-sphere>
@@ -32,19 +34,41 @@
 				-->
 
 					<a-entity position="0 0 0" scale="0.01 0.01 0.01">
-						<a-image width="210" height="297" position="-150 10 0" rotation="-90 0 0" src="images/seichi.png" id="seichi" class="raycastable" url_open="url: pdf/seichi.pdf">
-						</a-image>
-						<a-image width="210" height="297" position="150 10 0" rotation="-90 0 0" src="images/maincommu.png" id="maincommu" class="raycastable" url_open="url: pdf/maincommu.pdf">
-						</a-image>
-						<a-plane color="gray" height="600" width="900" position="0 0 0" rotation="-90 0 0"></a-plane>
+						<!-- -->
+						<a-entity camera look-controls position="0 700 300"></a-entity>
+						<!--<a-entity light="color: #fff; intensity: 0.0" position="-1000 1000 0"></a-entity> -->
+						
+
+						<a-image width="210" height="297" position="-260 10 -100" rotation="-90 0 0" src="images/seichi.png" id="seichi" class="raycastable" url_open="url: pdf/seichi.pdf"></a-image>
+						<a-image width="100" height="40" position="-260 20 70" rotation="-90 0 0" src="images/donwload.png" class="raycastable" url_open="url: pdf/seichi.pdf"></a-image>
+
+
+						<a-image width="210" height="297" position="0 10 -100" rotation="-90 0 0" src="images/4koma.png" id="seichi" class="raycastable" url_open="url: pdf/4koma.pdf"></a-image>
+						<a-image width="100" height="40" position="0 20 70" rotation="-90 0 0" src="images/donwload.png" class="raycastable" url_open="url: pdf/4koma.pdf"></a-image>
+
+
+						<a-image width="210" height="297" position="260 10 -100" rotation="-90 0 0" src="images/maincommu.png" id="maincommu" class="raycastable" url_open="url: pdf/maincommu.pdf"></a-image>
+						<a-image width="100" height="40" position="260 20 70" rotation="-90 0 0" src="images/donwload.png" class="raycastable" url_open="url: pdf/maincommu.pdf"></a-image>
+
+
+						<a-box color="#01a860" scale="900 30 600" position="0 -15 0" rotation="0 0 0"></a-box>
 
 						<a-entity
-						position="0 -1000 -500"
-						rotation="0 180 0"
-						scale="1000 1000 1000"
-						gltf-model="src: url(models/body.glb);"
-						animation-mixer="clip: *; timeScale:1"  id="vrmChara">
-					</a-entity>
+							position="0 -1000 -500"
+							rotation="0 180 0"
+							scale="1000 1000 1000"
+							gltf-model="src: url(models/body.glb);"
+							animation-mixer="clip: *; timeScale:1"  id="vrmChara">
+						</a-entity>
+
+						<a-entity
+							position="0 30 200"
+							rotation="0 0 0"
+							scale="800 800 800"
+							gltf-model="src: url(models/cake.glb);"
+						>
+						</a-entity>
+
 					</a-entity>
 
 				<!-- <a-sky color="#ECECEC"></a-sky> -->
