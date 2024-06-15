@@ -24,28 +24,34 @@
 			<!-- -->
 				<a-marker type="pattern" url="pattern-index_qr.patt">
 					<!--
-					<a-sphere position="0 0 0" radius="0.1" color="black"></a-sphere>
+					
 					<a-sphere position="0 0 1" radius="0.2" color="red"></a-sphere>
 					<a-sphere position="0 0 2" radius="0.3" color="blue"></a-sphere>
 					<a-image width="1" height="1" position="0 0 0" rotation="0 0 0" src="images/akane.jpg">
 					</a-image>
 				-->
 
-					<a-entity position="0 0 0" scale="0.01 0.01 0.01">
+					<a-entity position="0 0 0" scale="0.07 0.07 0.07">
 						<a-image width="210" height="297" position="-150 10 0" rotation="-90 0 0" src="images/seichi.png" id="seichi" class="raycastable" url_open="url: pdf/seichi.pdf">
 						</a-image>
 						<a-image width="210" height="297" position="150 10 0" rotation="-90 0 0" src="images/maincommu.png" id="maincommu" class="raycastable" url_open="url: pdf/maincommu.pdf">
 						</a-image>
+						<!--
 						<a-plane color="gray" height="600" width="900" position="0 0 0" rotation="-90 0 0"></a-plane>
+						-->
 
 						<a-entity
-						position="0 -1000 -500"
-						rotation="0 180 0"
-						scale="1000 1000 1000"
-						gltf-model="src: url(models/body.glb);"
-						animation-mixer="clip: *; timeScale:1"  id="vrmChara">
+							position="0 -1000 -500"
+							rotation="0 180 0"
+							scale="1000 1000 1000"
+							gltf-model="src: url(models/body.glb);"
+							animation-mixer="clip: *; timeScale:1"  id="vrmChara">
+						</a-entity>
+
+						<a-sphere position="0 0 0" radius="35" color="black"></a-sphere>
+
 					</a-entity>
-					</a-entity>
+
 
 				<!-- <a-sky color="#ECECEC"></a-sky> -->
 			<!-- -->
