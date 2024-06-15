@@ -32,20 +32,29 @@
 				-->
 
 					<a-entity position="0 0 0" scale="0.007 0.007 0.007">
-						<a-image width="210" height="297" position="-150 10 0" rotation="-90 0 0" src="images/seichi.png" id="seichi" class="raycastable" url_open="url: pdf/seichi.pdf">
-						</a-image>
-						<a-image width="210" height="297" position="150 10 0" rotation="-90 0 0" src="images/maincommu.png" id="maincommu" class="raycastable" url_open="url: pdf/maincommu.pdf">
-						</a-image>
+						<a-image width="210" height="297" position="-260 10 -240" rotation="-90 0 0" src="images/seichi.png" id="seichi" class="raycastable" url_open="url: pdf/seichi.pdf"></a-image>
+						<a-image width="100" height="40" position="-260 20 -70" rotation="-90 0 0" src="images/donwload.png" class="raycastable" url_open="url: pdf/seichi.pdf"></a-image>
+
+						<a-image width="210" height="297" position="260 10 -240" rotation="-90 0 0" src="images/maincommu.png" id="maincommu" class="raycastable" url_open="url: pdf/maincommu.pdf"></a-image>
+						<a-image width="100" height="40" position="260 20 -70" rotation="-90 0 0" src="images/donwload.png" class="raycastable" url_open="url: pdf/maincommu.pdf"></a-image>
 						<!--
 						<a-plane color="gray" height="600" width="900" position="0 0 0" rotation="-90 0 0"></a-plane>
 						-->
 
 						<a-entity
-							position="0 -1000 -500"
+							position="0 -1200 -500"
 							rotation="0 180 0"
 							scale="1000 1000 1000"
 							gltf-model="src: url(models/body.glb);"
 							animation-mixer="clip: *; timeScale:1"  id="vrmChara">
+						</a-entity>
+
+						<a-entity
+							position="0 0 0"
+							rotation="0 0 0"
+							scale="1000 1000 1000"
+							gltf-model="src: url(models/cake.glb);"
+						>
 						</a-entity>
 
 						<a-sphere position="0 0 0" radius="22" color="black"></a-sphere>
